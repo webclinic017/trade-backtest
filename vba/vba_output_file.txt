@@ -1,3 +1,4 @@
+'https://blog.gtwang.org/programming/excel-vba-file-input-and-output/
 Dim OutputFilePath As String
 Dim Content As String
 
@@ -5,19 +6,19 @@ Sub hello()
 
 
 
-' ¤å¦rÀÉ®×¦ì¸m
+' æ–‡å­—æª”æ¡ˆä½ç½®
 OutputFilePath = "C:\ctw.txt"
 
-' ¶}±Ò OutputFilePath ¤å¦rÀÉ¡A¨Ï¥Î½s¸¹ #2 ÀÉ®×¥N½X
+' é–‹å•Ÿ OutputFilePath æ–‡å­—æª”ï¼Œä½¿ç”¨ç·¨è™Ÿ #2 æª”æ¡ˆä»£ç¢¼
 Open OutputFilePath For Output As #2
 
-' ­n¼g¤JÀÉ®×ªº¤º®e
+' è¦å¯«å…¥æª”æ¡ˆçš„å…§å®¹
 Content = "This is a test."
 
-' ±N Content ªº¤º®e¼g¤J½s¸¹ #2 ªºÀÉ®×
+' å°‡ Content çš„å…§å®¹å¯«å…¥ç·¨è™Ÿ #2 çš„æª”æ¡ˆ
 Print #2, Content
 
-' Ãö³¬½s¸¹ #2 ÀÉ®×
+' é—œé–‰ç·¨è™Ÿ #2 æª”æ¡ˆ
 Close #2
 
 End Sub
