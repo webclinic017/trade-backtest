@@ -1,0 +1,23 @@
+Dim OutputFilePath As String
+Dim Content As String
+
+Sub hello()
+
+
+
+' 文字檔案位置
+OutputFilePath = "C:\ctw.txt"
+
+' 開啟 OutputFilePath 文字檔，使用編號 #2 檔案代碼
+Open OutputFilePath For Output As #2
+
+' 要寫入檔案的內容
+Content = "This is a test."
+
+' 將 Content 的內容寫入編號 #2 的檔案
+Print #2, Content
+
+' 關閉編號 #2 檔案
+Close #2
+
+End Sub
